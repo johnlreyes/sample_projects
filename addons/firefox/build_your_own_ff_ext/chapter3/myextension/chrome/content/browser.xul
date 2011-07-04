@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://myextension/content/browser.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://myextension/locale/lang.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script src="chrome://myextension/content/browser.js" type="application/javascript"/>
+
+	<statusbar id="status-bar">
+		<statusbarpanel 	insertafter="statusbar-progresspanel" 
+								id="myextension-statusoverlay">
+			<label>Hello World!</label>
+		</statusbarpanel>
+	</statusbar>
+
+	<menupopup id="menu_ToolsPopup"> 
+		<menuitem 	id="myextension-toolsmenuitem" 
+						label="My Extension" 
+						insertbefore="sanitizeSeparator"/>
+	</menupopup>
+
+</overlay>

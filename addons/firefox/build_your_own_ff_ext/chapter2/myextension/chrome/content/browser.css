@@ -1,0 +1,9 @@
+#myextension-statusoverlay > label
+{
+	font-weight:bold;
+}
+
+#myextension-toolsmenuitem
+{
+	list-style-image:url(chrome://myextension/content/logo.png);
+}

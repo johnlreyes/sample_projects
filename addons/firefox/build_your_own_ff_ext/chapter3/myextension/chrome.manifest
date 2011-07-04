@@ -1,0 +1,5 @@
+overlay		chrome://browser/content/browser.xul		chrome://myextension/content/browser.xul
+
+content		myextension		chrome/content/
+
+locale		myextension		en-US			chrome/locale/en-US/

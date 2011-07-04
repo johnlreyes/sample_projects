@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://myextension/content/browser.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://myextension/locale/lang.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script src="chrome://myextension/content/browser.js" type="application/javascript"/>
+
+	<statusbar id="status-bar">
+		<statusbarpanel	insertafter="statusbar-progresspanel" 
+								id="myextension-statusoverlay">
+			<label>Hello World! - chapter2</label>
+		</statusbarpanel>
+	</statusbar>
+
+	<menupopup id="menu_ToolsPopup"> 
+		<menuitem 	id="myextension-toolsmenuitem" 
+						label="My Extension" 
+						insertbefore="sanitizeSeparator"
+						oncommand="myextension.greet()"
+						/>
+		<menuitem	id="myextension-dialog-menu"
+						label="My Dialog"
+						insertbefore="sanitizeSeparator"
+						oncommand="myextension.showdialog()"
+						/>
+		<menuitem	id="myextension-nba.com"
+						label="Goto NBA.com"
+						oncommand="myextension.gotoNBA()"
+						/>
+	</menupopup>
+
+</overlay>

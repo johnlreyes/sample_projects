@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<dialog
+	xmlns="http://www.mozila.org/keymaster/gatekeeper/there.is.only.xul"
+
+	id="dms-clearconfirm"
+	buttons="accept,cancel"
+	defaultButton="cancel"
+	buttonlabelaccept="Yes"
+	buttonlabelcancel="No"
+	title="Confirm"
+
+	ondialogaccept=
+		"alert('accepted')"
+>
+	<description style="margin-bottom:10px;max-width:300px;">
+		Are you sure you want to clear data for the current site?
+	</description>
+
+	<checkbox id="dms-clearconfirm-clearconfirm"
+			checked="true"
+			label="Ask me every time"/>
+
+</dialog>

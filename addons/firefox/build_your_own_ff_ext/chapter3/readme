@@ -1,0 +1,2 @@
+copy the "myextension@mysite.com" file to <home>/.mozilla/firefox/<profile>/extensions
+then check the addon on the firefox addon dialog

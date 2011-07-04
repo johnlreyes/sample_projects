@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+	
+		<em:id>myextension_chapter2@mysite.com</em:id>
+		<em:version>1.1</em:version>
+		<em:iconURL>chrome://myextension/content/logo.png</em:iconURL>
+		
+		<em:name>My Extension - Chapter 2</em:name>
+		<em:description>Build Your Own Firefox Extensions - Chapter 2</em:description>
+		
+		<em:homepageURL>http://www.mysite.com/extension/details/</em:homepageURL>
+		<em:creator>My Name; http://www.mysite.com/</em:creator>
+
+		<!-- firefox -->
+		<em:type>2</em:type>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>5.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	
+	</Description>  
+    
+</RDF>
